@@ -1,0 +1,54 @@
+.blog-container{
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-auto-rows: 219px;
+
+    grid-template-areas: 
+    'one two three'
+    'one five three'
+    'four five six';
+
+    gap: 10px;
+
+    margin: 30px;
+}
+
+@media(min-width: 75em){
+    .blog-container{
+        grid-template-areas: 
+        'one two three'
+        'one five three'
+        'four five six';
+        
+    }
+}
+
+
+.grid-item-1{
+    grid-area: one;
+
+}
+
+.grid-item-2{
+    grid-area: two;
+}
+
+.grid-item-3{
+    grid-area: three;
+}
+
+.grid-item-4{
+    grid-area: four;
+}
+
+.grid-item-5{
+    grid-area: five;
+}
+
+.grid-item-6{
+    grid-area: six;
+}
+
+.grid-item-7{
+
+}
